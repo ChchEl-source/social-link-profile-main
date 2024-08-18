@@ -1,0 +1,138 @@
+/* boilerplate */
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --gray-900: #141414;
+  --gray-800: #1f1f1f;
+  --gray-700: #333;
+  --green: #c4f82a;
+  --white: #fff;
+}
+
+body {
+  line-height: 150%;
+  background-color: var(--gray-900);
+}
+
+.card-container {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-element {
+  font-family: "Inter", sans-serif;
+
+  padding: 24px;
+  width: 327px;
+  height: 579px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: var(--gray-800);
+}
+
+/* sections img, profile infos */
+.img-section img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.id-section {
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.id-section h1 {
+  font-size: 24px;
+}
+
+.id-section h2 {
+  font-size: 14px;
+  color: var(--green);
+}
+
+.presentation-txt {
+  font-size: 14px;
+}
+
+/* button profiles section */
+
+.socials-section {
+  width: 279px;
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profiles-btn {
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  height: 45px;
+  border: none;
+  background-color: var(--gray-700);
+  color: var(--white);
+}
+
+
+.profiles-btn:hover{
+    background-color: var(--green);
+    color: var(--gray-700);
+    cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+  .card-element {
+    width: 456px;
+    height: 611px;
+    padding: 40px;
+  }
+
+  .socials-section {
+    width: 376px;
+    height: 289px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-element {
+    width: 384px;
+    height: 611px;
+  }
+
+  .socials-section {
+    width: 304px;
+    height: 289px;
+  }
+}
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+color: var(--gray-700);
+padding: 4px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
